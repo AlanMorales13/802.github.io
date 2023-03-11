@@ -198,3 +198,18 @@ ul li:hover .titulo{
     transition-delay: 0.25s;
 }
 
+
+
+div.page-container {
+  max-width: 75%;
+  min-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+div.page-container-inner {
+  min-width: 960px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  }
