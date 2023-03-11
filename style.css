@@ -1,0 +1,210 @@
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    height: 100vh;
+}
+
+
+.button1 {
+    font-size: 12px;
+    padding: 0.01em 0.25em;
+
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    bottom: 40%;
+    right: 50%;
+    gap: 12px;
+
+}
+
+.bt1 {
+    cursor: default;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    font-size: 1.5em;
+    color: #7ad372;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+
+    border-radius: 15em;
+    border: 0.08em solid #7ad372;
+    box-shadow: 0 0.4em 0.1em 0.019em #7ad372
+}
+
+/* animation */
+.bt1:hover {
+    transition: 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 10px 5px 50px #7ad372;
+}
+
+.bt1:not(hover) {
+    transition: all 0.5s;
+} 
+
+/* #4240f0 */
+
+
+
+.button2 {
+    font-size: 12px;
+    padding: 0.01em 0.25em;
+
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    bottom: 40%;
+    right: 36%;
+    gap: 12px;
+
+}
+
+
+.bt2 {
+    cursor: default;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    font-size: 1.5em;
+    color: #4240f0;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+
+    border-radius: 15em;
+    border: 0.08em solid #4240f0;
+    box-shadow: 0 0.4em 0.1em 0.019em #4240f0;
+
+}
+
+/* animation */
+.bt2:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 10px 5px 50px #4240f0;
+}
+
+.bt2:not(hover) {
+    transition: all 0.5s;
+    
+}
+/* ##################################### */
+
+
+@import url('https://fons.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.links{
+    display: flex;
+    position: absolute;
+    top: 65%;
+    right: 38%;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+}
+ul li:hover::before{
+    opacity: 1;
+}
+ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+    box-shadow: 10px 5px 50px #4240f0;
+
+}
+ul li:hover::after{
+    opacity: 0.5;
+}
+
+ul li i{
+    color: #777;
+    font-size: 1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75em;
+    transition-delay: 0.25s;
+}
+ul li span{
+    position: absolute;
+}
+ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+
+
+header {
+    opacity: 0;
+    animation: ani 2.5s forwards;
+}
+
+
